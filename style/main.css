@@ -1,0 +1,86 @@
+/* === Paleta de cores InsumoVet === */
+:root {
+  --verde-principal: #2E7D32;
+  --laranja-destaque: #FF9800;
+  --branco: #FFFFFF;
+  --cinza-texto: #9E9E9E;
+  --verde-claro: #81C784;
+}
+
+/* === Reset básico === */
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--branco);
+  color: #333;
+}
+
+/* === Navbar === */
+.custom-navbar {
+  background-color: var(--branco);
+}
+
+.custom-navbar .nav-link {
+  color: var(--verde-principal);
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--laranja-destaque);
+}
+
+/* === Hero Banner === */
+.hero-banner {
+  height: 100vh;
+  background-image: url('../assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--verde-principal);
+}
+
+.banner-content h1 {
+  font-weight: 700;
+}
+
+.banner-content .btn-primary {
+  background-color: var(--verde-principal);
+  border-color: var(--verde-principal);
+}
+
+.banner-content .btn-primary:hover {
+  background-color: var(--laranja-destaque);
+  border-color: var(--laranja-destaque);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body .btn {
+  margin-top: auto;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+
+
+.social-icons a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
